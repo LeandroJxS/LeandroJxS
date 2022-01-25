@@ -21,7 +21,7 @@
     </header>
 
     <main>
-        <div class="tittle">
+        <div class="title">
             <h2>Freets</h2>
             <span>Lista de personagens disponivel</span>
         </div>
@@ -33,12 +33,12 @@
             </div>
 
             <div class="lineInput">
-                <label>Valor</label>
-                <input type="text" id="valor" placeholder="Valor do produto">
+                <label>Preço</label>
+                <input type="text" id="preco" placeholder="Valor do produto">
             </div>
 
-            <button onclick="produto.adicionar()">Adicionar</button>
-            <button onclick="produto.excluir()">Deletar</button>
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
         </div>
 
         <div class="content">
@@ -49,15 +49,8 @@
                     <th>Valor</th>
                     <th>Acão</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>vassoura</td>
-                        <td>1000</td>
-                        <td>
-                            <img src="img/aceitar.png" alt="">
-                        </td>
-                    </tr>
+                <tbody id="tbody">
+                    
                 </tbody>
             </table>
 
