@@ -7,20 +7,62 @@
     <title>Projetinho</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>    
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>    
 </head>
 <body>
-    <h1>Alnwick</h1>
 
-    <div class="card">
-        <h1>Controle</h1>
+    <header>
+        <h1>Alnwick</h1>
+    </header>
 
-        <button onclick="produto.adicionar()">Adicionar</button>
-        <button onclick="produto.excluir()">Deletar</button>   
+    <main>
+        <div class="tittle">
+            <h2>Freets</h2>
+            <span>Lista de personagens disponivel</span>
+        </div>
         
-    </div>
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Nome do produto">
+            </div>
 
+            <div class="lineInput">
+                <label>Valor</label>
+                <input type="text" id="valor" placeholder="Valor do produto">
+            </div>
+
+            <button onclick="produto.adicionar()">Adicionar</button>
+            <button onclick="produto.excluir()">Deletar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Acão</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>vassoura</td>
+                        <td>1000</td>
+                        <td>
+                            <img src="img/aceitar.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
 
 </body>
 </html>
